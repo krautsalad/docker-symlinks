@@ -2,7 +2,11 @@
 
 Cron-Managed Symlink Utility for Chrooted Paths.
 
-**docker-symlinks** is a Docker container that runs the [symlinks utility](https://github.com/brandt/symlinks) on a scheduled basis using cron. It ensures that symlinks in your chrooted environment (mounted under `/host`) are optimized by shortening relative links, converting absolute links to relative ones, and removing broken links.
+**docker-symlinks** is an Alpine-based Docker container that periodically runs the [symlinks utility](https://github.com/brandt/symlinks) using cron. It optimizes symlinks in your chrooted environment (mounted under /host) by:
+
+- Converting absolute symlinks to relative ones.
+- Shortening symlinks.
+- Removing broken or mangled symlinks.
 
 ## Configuration
 
