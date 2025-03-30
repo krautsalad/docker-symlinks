@@ -8,6 +8,8 @@ Cron-Managed Symlink Utility for Chrooted Paths.
 - Shortening symlinks.
 - Removing broken or mangled symlinks.
 
+This helps maintain a clean and efficient filesystem, especially in environments where symlink management is critical.
+
 ## Configuration
 
 ### Docker Compose Example
