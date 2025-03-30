@@ -45,3 +45,7 @@ It operates on the chrooted path `/host`. For correct operation, you must mount 
 ### Excluding Directories
 
 To prevent the utility from processing directories you want to exclude (for example, Docker's storage at `/var/lib/docker`), mount an empty directory over that path. This avoids accidental deletion or modification of essential symlinks.
+
+## Source Code
+
+You can find the full source code on [GitHub](https://github.com/krautsalad/docker-symlinks).
