@@ -31,7 +31,7 @@ services:
 
 ### Environment Variables
 
-- `SCHEDULE`: Cron schedule for running the utility (default: 0 0 * * *).
+- `SCHEDULE`: Cron schedule for running the utility (default: `0 0 * * *`).
 - `TZ`: Timezone setting (default: UTC).
 
 ## How it works
