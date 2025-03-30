@@ -14,7 +14,7 @@ This helps maintain a clean and efficient filesystem, especially in environments
 
 ### Docker Compose Example
 
-```yaml
+```yml
 # docker-compose.yml
 services:
   symlinks:
