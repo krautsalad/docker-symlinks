@@ -2,9 +2,9 @@ FROM alpine AS build
 
 ARG SYMLINKS_VERSION
 
-RUN wget -q https://github.com/brandt/symlinks/releases/download/v${SYMLINKS_VERSION}/symlinks-${SYMLINKS_VERSION}.tar.gz && \
+RUN wget -q https://github.com/brandt/symlinks/archive/refs/tags/v${SYMLINKS_VERSION}.tar.gz && \
     mkdir -p /symlinks && \
-    tar -xzf symlinks-${SYMLINKS_VERSION}.tar.gz --strip-components=1 -C /symlinks
+    tar -xzf v${SYMLINKS_VERSION}.tar.gz --strip-components=1 -C /symlinks
 
 FROM alpine
 
